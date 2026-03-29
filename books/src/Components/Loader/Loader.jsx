@@ -1,7 +1,13 @@
 import React from 'react';
+import LoaderImg from "../../images/Loader.svg";
+import "./Loader.css";
 
 const Loader = () => {
-	return <div>Loader</div>;
-};
+  return( 
+    <div className='loader flex flex-c'>
+      <img src={LoaderImg} alt="Loader" />
+    </div>
+  )
+}
 
 export default Loader;
