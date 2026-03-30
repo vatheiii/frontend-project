@@ -7,7 +7,7 @@ const Loader = () => {
     <div className='loader flex flex-c'>
       <img src={LoaderImg} alt="Loader" />
     </div>
-  )
-}
+  );
+};
 
 export default Loader;
