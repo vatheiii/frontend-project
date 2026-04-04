@@ -1,7 +1,7 @@
 import React, {useRef, useEffect} from 'react';
 import {FaSearch} from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
-import { useGlobalContext } from '../../context';
+import { useGlobalContext } from '../../context.jsx';
 import "./SearchForm.css";
 
 const SearchForm = () => {
@@ -20,7 +20,7 @@ const SearchForm = () => {
       setSearchTerm(searchText.current.value);
     }
 
-    navigate("/book");
+    navigate("/books");
   };
 
   return (

@@ -10,11 +10,11 @@ const AppProvider = ({children}) => {
     const [resultTitle, setResultTitle] = useState("");
 
     const fetchBooks = useCallback(async() => {
-        setLoading(true);
         try{
             const response = await fetch(`${URL}${searchTerm}`);
             const data = await response.json();
             const {docs} = data;
+            console.log(docs);
 
             if(docs){
                 const newBooks = docs.slice(0, 20).map((bookSingle) => {
@@ -50,7 +50,7 @@ const AppProvider = ({children}) => {
 
     useEffect(() => {
         fetchBooks();
-    }, [searchTerm, fetchBooks]);
+    }, [fetchBooks]);
 
     return (
         <AppContext.Provider value = {{
@@ -61,6 +61,7 @@ const AppProvider = ({children}) => {
     )
 }
 
+// eslint-disable-next-line react-refresh/only-exports-components
 export const useGlobalContext = () => {
     return useContext(AppContext);
 }
