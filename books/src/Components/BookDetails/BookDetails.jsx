@@ -14,6 +14,14 @@ const BookDetails = () => {
   const [book, setBook] = useState(null);
   const navigate = useNavigate();
 
+  const handleBack = () => {
+    if (window.history.length > 1) {
+      navigate(-1);
+      return;
+    }
+    navigate('/books');
+  };
+
   useEffect(() => {
     setLoading(true);
     async function getBookDetails(){
@@ -50,7 +58,7 @@ const BookDetails = () => {
   return (
     <section className='book-details'>
       <div className='container'>
-        <button type='button' className='flex flex-c back-btn' onClick={() => navigate("/book")}>
+        <button type='button' className='flex flex-c back-btn' onClick={handleBack}>
           <FaArrowLeft size = {22} />
           <span className='fs-18 fw-6'>Go Back</span>
         </button>

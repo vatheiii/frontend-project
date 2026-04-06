@@ -11,7 +11,7 @@ const Header = () => {
 				<div className="header-content flex flex-column text-center text-white">
 					<h2 className="header-title text-capitalize">
 						Find the book of your choice!
-					</h2><br />
+					</h2>
 					<p className="header-text fs-18-fw-3">
 						Discover a world of stories at your fingertips.
 						Our book website brings together a wide collection of novels,

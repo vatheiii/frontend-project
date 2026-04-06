@@ -1,0 +1,12 @@
+node_modules/
+books/node_modules/
+dist/
+books/dist/
+*.log
+*.log.*
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.vite/
+books/.vite/

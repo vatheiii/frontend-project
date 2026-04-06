@@ -1,0 +1,127 @@
+.home-footer {
+  padding: 0 0 4rem;
+  background: #f8fafc;
+}
+
+.home-footer-card {
+  display: grid;
+  gap: 1.6rem;
+  padding: 2rem 2.2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #e3ebf4;
+  box-shadow: 0 12px 28px rgba(15, 76, 129, 0.06);
+}
+
+.home-footer-kicker {
+  margin: 0 0 0.35rem;
+  color: #5d7083;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.home-footer-copy h2 {
+  margin: 0;
+  font-size: 2.4rem;
+  letter-spacing: 0.2px;
+  text-transform: none;
+}
+
+.home-footer-divider {
+  height: 1px;
+  width: 100%;
+  background: linear-gradient(90deg, transparent, #d8e3ef, transparent);
+}
+
+.home-footer-actions {
+  display: grid;
+  gap: 1.2rem;
+}
+
+.home-footer-icons {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.home-footer-icon {
+  width: 4rem;
+  height: 4rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f8fbff;
+  border: 1px solid #dbe6f0;
+  color: #24415f;
+  box-shadow: none;
+  transition: transform 220ms ease, color 220ms ease, border-color 220ms ease, background-color 220ms ease;
+}
+
+.home-footer-icon svg {
+  font-size: 1.75rem;
+}
+
+.home-footer-icon:hover {
+  transform: translateY(-2px) scale(1.03);
+  background: #ffffff;
+}
+
+.home-footer-icon[aria-label='Instagram']:hover {
+  color: #d62976;
+  border-color: rgba(214, 41, 118, 0.22);
+}
+
+.home-footer-icon[aria-label='Facebook']:hover {
+  color: #1877f2;
+  border-color: rgba(24, 119, 242, 0.22);
+}
+
+.home-footer-icon[aria-label='X']:hover {
+  color: #111827;
+  border-color: rgba(17, 24, 39, 0.18);
+}
+
+.home-footer-icon[aria-label='Discord']:hover {
+  color: #5865f2;
+  border-color: rgba(88, 101, 242, 0.22);
+}
+
+.home-footer-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem 1.2rem;
+  align-items: center;
+  color: #5d7083;
+  font-size: 1.45rem;
+  padding-top: 0.2rem;
+}
+
+.home-footer-meta a {
+  color: #24415f;
+}
+
+.home-footer-meta a:hover {
+  color: #0f4c81;
+}
+
+@media screen and (min-width: 800px) {
+  .home-footer-card {
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 2.4rem 2.6rem;
+  }
+
+  .home-footer-divider {
+    width: 1px;
+    height: 100%;
+    min-height: 72px;
+    background: linear-gradient(180deg, transparent, #d8e3ef, transparent);
+  }
+
+  .home-footer-actions {
+    justify-items: end;
+  }
+}

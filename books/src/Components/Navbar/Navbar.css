@@ -41,6 +41,13 @@
 .nav-link{
     transition: var(--transition);
 }
+.nav-link-btn{
+    border: none;
+    background: transparent;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
 .nav-link:hover{
     color: var(--purple-color);
 }
