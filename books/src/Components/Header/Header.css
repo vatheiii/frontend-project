@@ -1,25 +1,48 @@
 
 .header-content {
 	min-height: 75vh;
-	background: linear-gradient(rgba(21, 58, 83, 0.3), rgba(31, 111, 139, 0.5)), url("../../images/books.png") center/cover no-repeat;
+	background:
+		linear-gradient(rgba(8, 15, 25, 0.48), rgba(19, 28, 42, 0.54)),
+		url("../../images/books.png") center/cover no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
 	color: #ffffff;
-	padding: 2.25rem 1rem;
+	padding: 2.8rem 1rem 2.4rem;
 }
 
 .header-title {
 	margin: 0;
-	font-size: 4.2rem;
+	font-size: 4.1rem;
+	font-weight: 600;
+	letter-spacing: 0.1px;
+	max-width: 12ch;
+	line-height: 1.08;
 }
 
 .header-text {
-	margin-top: -1.8rem;
-	margin-bottom: 2.8rem;
-	opacity: 0.8;
-	max-width: 770px;
-	line-height: 1.8;
+	margin-top: 1rem;
+	margin-bottom: 2.2rem;
+	opacity: 0.82;
+	max-width: 700px;
+	line-height: 1.75;
+	font-size: 1.6rem;
+}
+
+.header-content .search-form {
+	width: 100%;
+	max-width: 700px;
+}
+
+@media screen and (max-width: 640px) {
+	.header-title {
+		font-size: 3.5rem;
+		max-width: 13ch;
+	}
+
+	.header-text {
+		font-size: 1.48rem;
+	}
 }

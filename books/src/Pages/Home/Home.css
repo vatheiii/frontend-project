@@ -1,0 +1,17 @@
+.home-page {
+	background-color: #f8fafc;
+}
+
+.about-reveal {
+	opacity: 0;
+	max-height: 0;
+	overflow: hidden;
+	transform: translateY(30px);
+	transition: opacity 420ms ease, transform 420ms ease, max-height 720ms ease;
+}
+
+.about-reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+	max-height: 2000px;
+}

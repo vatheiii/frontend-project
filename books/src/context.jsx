@@ -61,7 +61,7 @@ const AppProvider = ({children}) => {
     )
 }
 
-// eslint-disable-next-line react-refresh/only-exports-components
+
 export const useGlobalContext = () => {
     return useContext(AppContext);
 }

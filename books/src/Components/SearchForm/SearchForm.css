@@ -1,15 +1,28 @@
 .search-form{
     width: 100%;
     max-width: 680px;
+    margin: 0 auto;
+}
+.search-form-content{
+    display: flex;
+    justify-content: center;
 }
 .search-form-elem{
-    padding: 1.4rem 2.8rem;
-    border-radius: 3.8rem;
+    width: 100%;
+    padding: 1.1rem 1.4rem 1.1rem 1.9rem;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 10px 24px rgba(2, 6, 23, 0.1);
+    backdrop-filter: blur(10px);
 }
 .search-form-elem .form-control{
-    font-size: 2rem;
-    padding: 0.6rem;
+    flex: 1;
+    min-width: 0;
+    font-size: 1.68rem;
+    padding: 0.6rem 0.8rem;
+    background: transparent;
 }
 .search-form-elem .form-control::placeholder{
-    opacity: 0.9;
+    opacity: 0.68;
 }
